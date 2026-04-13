@@ -4,7 +4,7 @@ namespace MoreGoldForMerchants
 {
     public class Settings
     {
-        [SynthesisTooltip("Amount gold.")]
-        public int AmountGold = 15000;
+        [SynthesisTooltip("Gold amount multiplier.")]
+        public uint GoldMultiplier = 5;
     }
 }

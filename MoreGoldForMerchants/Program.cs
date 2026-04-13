@@ -76,7 +76,8 @@ namespace MoreGoldForMerchants
                         continue;
                     }
 
-                    data!.Count = (short) settings.AmountGold;
+                    var multipliedCount = data!.Count * settings.GoldMultiplier;
+                    data!.Count = (short)Math.Min(multipliedCount, short.MaxValue);
                 }
             }
         }
